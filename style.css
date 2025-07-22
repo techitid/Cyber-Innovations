@@ -423,6 +423,10 @@ p {
 
 
 /*============Footer Section Css Start Here============*/
+.footer {
+	margin: 0px 30px;
+}
+
 .footer .footer-cont {
 	background-color: #111827;
 	width: 100%;
@@ -521,7 +525,6 @@ p {
 	line-height: 16px;
 	text-align: center;
 	color: #6B7280;
-	padding: 0px 22px;
 }
 
 /* Responsive Styles */
@@ -577,7 +580,15 @@ p {
 	}
 
 	.footer .footer-cont {
-		padding: 27px 28px 36px 7px;
+		padding: 27px 20px 36px 20px;
+	}
+
+	.footer .footer-section {
+		margin: 0px 0px 30px;
+	}
+
+	.footer .footer-section h4 {
+		margin-bottom: 15px;
 	}
 }
 
@@ -638,7 +649,7 @@ p {
 	}
 
 	.footer .logo-section img.footer-logo {
-		margin-left: -21px;
+		margin-left: -11px;
 	}
 }
 
@@ -694,5 +705,9 @@ p {
 
 	.what-we-do .business-team-img {
 		margin-bottom: 40px;
+	}
+
+	.footer .logo-section img {
+		width: 165px;
 	}
 }
