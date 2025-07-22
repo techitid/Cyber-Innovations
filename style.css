@@ -377,7 +377,8 @@ p {
 .what-we-do li {
 	list-style-type: none;
 }
-.what-we-do li a{
+
+.what-we-do li a {
 	display: flex;
 	justify-content: space-between;
 	background-color: #DBFBE3;
@@ -387,7 +388,7 @@ p {
 	font-weight: 500;
 	color: #00373E;
 	align-items: center;
-	text-decoration:none;
+	text-decoration: none;
 }
 
 .what-we-do li img {
@@ -418,6 +419,108 @@ p {
 
 .why-choose-us .heading-intro-cont {
 	margin-bottom: 35px;
+}
+
+
+/*============Footer Section Css Start Here============*/
+.footer .footer-cont {
+	background-color: #111827;
+	width: 100%;
+	border-radius: 16px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 47px 68px 36px 47px;
+}
+
+.footer .footer-section {
+	flex: 1 1 200px;
+	margin: 20px;
+}
+
+.footer .footer-section:nth-child(3) {
+	flex: 0 0 130px;
+}
+
+.footer .footer-section h4 {
+	font-size: 16px;
+	margin-bottom: 28px;
+	font-weight: 700;
+	line-height: 16px;
+	color: #ffffff;
+}
+
+.footer .footer-section ul {
+	list-style: none;
+}
+
+
+.footer .logo-section img {
+	width: 265px;
+	margin-bottom: 10px;
+}
+
+.footer .logo-section p,
+.footer .footer-section ul li,
+.footer .footer-section li a {
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 60px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.footer .logo-section p {
+	margin-bottom: 60px;
+}
+
+.footer .footer-section ul li,
+.footer .footer-section li a {
+	margin-bottom: 14px;
+	text-decoration: none;
+}
+
+
+.footer .footer-section li a {
+	line-height: 16px;
+}
+
+.footer .social-icons a img {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+
+.footer .footer-section.contact p {
+	margin-bottom: 8px;
+	font-size: 14px;
+	line-height: 34px;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+}
+
+.footer .logo-section p,
+.footer .social-icons {
+	margin-left: 39px;
+}
+
+.footer .footer-bottom {
+	border-top: 1px solid #2d3748;
+	margin-top: 3px;
+	text-align: center;
+	padding-top: 33px;
+	font-size: 14px;
+	color: #a0aec0;
+	width: 100%;
+
+}
+
+.footer .footer-bottom p {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: #6B7280;
 }
 
 /* Responsive Styles */
