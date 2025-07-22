@@ -679,6 +679,14 @@ p {
 		width: 29%;
 	}
 
+	.hero .badges img {
+		width: 85px;
+	}
+
+	.hero .badges img:nth-child(2) {
+		width: 102px;
+	}
+
 	.btn,
 	.btn-outline {
 		padding: 10px 19px;
