@@ -5,6 +5,32 @@
 	font-family: 'Bricolage Grotesque', sans-serif;
 }
 
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+.heading-text {
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
+
+p {
+	color: #111827;
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.sec-padding {
+	padding: 100px 30px;
+}
+
+.heading-intro-cont .heading-text {
+	margin-bottom: 25px;
+}
+
 /*============Main Header Css Start Here============*/
 
 .main-header {
@@ -164,6 +190,8 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 30px;
+	margin: 0px 30px;
+
 }
 
 .hero .badges {
@@ -190,11 +218,9 @@
 }
 
 .hero .hero-content h1 {
-	font-size: 60px;
-	line-height: 60px;
+
 	margin-bottom: 101px;
-	font-weight: 500;
-	letter-spacing: 0.5px;
+
 }
 
 .hero .trusted {
@@ -275,6 +301,125 @@
 	bottom: 19px;
 }
 
+
+/*============Who We Are Section Css Start Here============*/
+.who-we-are .heading-intro-cont {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 2fr 4fr;
+	margin-bottom: 30px;
+}
+
+/*============Card Section Css Start Here============*/
+.card-cont {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 30px;
+}
+
+.card {
+	background: #F6F6F6;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+	padding: 30px;
+}
+
+.card:hover {
+	transform: translateY(-8px);
+}
+
+.card img {
+	width: 70px;
+	transition: transform 0.3s ease;
+	border-radius: 50%;
+	padding: 10px;
+	background-color: #DCEAF4;
+	margin-bottom: 25px;
+}
+
+.card:nth-child(2) img {
+	background-color: #FBE4DE;
+}
+
+.card:nth-child(3) img {
+	background-color: #DBFBE3;
+}
+
+.card:hover img {
+	transform: scale(1.05);
+}
+
+.card h3 {
+	font-size: 20px;
+	color: #111827;
+	margin-bottom: 10px;
+}
+
+/*============What We Do Section Css Start Here============*/
+
+.what-we-do {
+	padding: 0px 30px;
+}
+
+.what-we-do .business-team-img {
+	padding-top: 55px;
+	width: 100%;
+}
+
+.what-we-do .what-we-do-cont {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 3fr 7fr;
+}
+
+.what-we-do li {
+	list-style-type: none;
+}
+.what-we-do li a{
+	display: flex;
+	justify-content: space-between;
+	background-color: #DBFBE3;
+	padding: 20px;
+	margin-bottom: 19px;
+	border-radius: 20px;
+	font-weight: 500;
+	color: #00373E;
+	align-items: center;
+	text-decoration:none;
+}
+
+.what-we-do li img {
+	width: 25px;
+	background-color: #F6F6F6;
+	border-radius: 20px;
+	padding: 5px;
+}
+
+/*============Why choose us Section Css Start Here============*/
+
+
+.why-choose-us .card:nth-child(1) {
+	background: #FFEDED;
+}
+
+.why-choose-us .card:nth-child(2) {
+	background: #DBFBE3;
+}
+
+.why-choose-us .card:nth-child(3) {
+	background: #EBECFF;
+}
+
+.why-choose-us .card img {
+	background-color: #ffffff;
+}
+
+.why-choose-us .heading-intro-cont {
+	margin-bottom: 35px;
+}
+
 /* Responsive Styles */
 @media (max-width:1280px) {
 	.hero .badges img {
@@ -329,16 +474,17 @@
 }
 
 @media (max-width:991px) {
+	.heading-text {
+		font-size: 50px;
+		line-height: 51px;
+	}
+
 	.hero {
 		flex-direction: column;
 		padding: 47px 15px 0px;
 
 	}
 
-	.hero .hero-content h1 {
-		font-size: 50px;
-		line-height: 51px;
-	}
 
 	.hero .badges {
 		display: flex;
@@ -367,7 +513,11 @@
 }
 
 @media (max-width:767px) {
-	.hero .hero-content h1 {
+	.sec-padding {
+		padding: 55px 30px;
+	}
+
+	.heading-text {
 		font-size: 35px;
 		line-height: 37px;
 	}
@@ -391,5 +541,28 @@
 	.btn,
 	.btn-outline {
 		padding: 10px 19px;
+	}
+
+	.who-we-are .heading-intro-cont,
+	.card-cont,
+	.what-we-do .what-we-do-cont {
+		display: inherit;
+	}
+
+	.card {
+		margin-bottom: 40px;
+		padding: 15px;
+	}
+
+	.card:last-child {
+		margin-bottom: 0px;
+	}
+
+	.heading-intro-cont .heading-text {
+		margin-bottom: 15px;
+	}
+
+	.what-we-do .business-team-img {
+		margin-bottom: 40px;
 	}
 }
