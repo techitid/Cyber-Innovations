@@ -331,7 +331,7 @@ p {
 }
 
 .card img {
-	width: 70px;
+	width:55px;
 	transition: transform 0.3s ease;
 	border-radius: 50%;
 	padding: 10px;
