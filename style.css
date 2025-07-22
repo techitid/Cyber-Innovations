@@ -521,6 +521,7 @@ p {
 	line-height: 16px;
 	text-align: center;
 	color: #6B7280;
+	padding: 0px 22px;
 }
 
 /* Responsive Styles */
@@ -574,6 +575,10 @@ p {
 		width: 100%;
 		justify-content: space-between;
 	}
+
+	.footer .footer-cont {
+		padding: 27px 28px 36px 7px;
+	}
 }
 
 @media (max-width:991px) {
@@ -612,6 +617,28 @@ p {
 
 	.hero .phone-img {
 		width: 28%;
+	}
+
+	.footer .footer-section,
+	.footer .footer-section:nth-child(3) {
+		flex: 0 0 100%;
+	}
+
+	.footer .logo-section p br {
+		display: none;
+	}
+
+	.footer .logo-section p,
+	.footer .social-icons {
+		margin-left: 0px;
+	}
+
+	.footer .logo-section p {
+		margin-bottom: 15px;
+	}
+
+	.footer .logo-section img.footer-logo {
+		margin-left: -21px;
 	}
 }
 
