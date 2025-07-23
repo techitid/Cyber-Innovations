@@ -118,7 +118,7 @@ nav.header-center a {
 	border-bottom: 3px solid transparent;
 }
 
-nav.header-center a:hover {
+nav.header-center a:hover,nav.header-center a:active {
 	border-bottom: 3px solid #FC3535;
 }
 
