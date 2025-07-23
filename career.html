@@ -3,16 +3,17 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Career</title>
+      <title>Cyber Innovations</title>
       <link rel="stylesheet" href="style.css" />
       <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
    </head>
    <body>
       <!------------------ Main Header Start Here ------------------>
       <header class="main-header">
+	    <div class="main-header-wrapper">
          <!-- Logo and Toggle -->
          <div class="header-left">
-            <img src="images/logo.svg" alt="Cyber Innovations logo" />
+            <a href="index.html"><img src="images/logo.svg" alt="Cyber Innovations logo" /></a>
             <div class="menu-toggle" id="menu-toggle">
                <span></span><span></span><span></span>
             </div>
@@ -20,10 +21,10 @@
          <!-- Navigation (desktop) -->
          <nav class="header-center">
             <a href="#" class="active">Home</a>
-            <a href="#">Who we are</a>
-            <a href="#">What we do</a>
+            <a href="#who-we-are">Who We Are</a>
+            <a href="#">What We Do</a>
             <a href="#">Career</a>
-            <a href="#">Contact us</a>
+            <a href="#">Contact Us</a>
          </nav>
          <!-- Contact Info (desktop) -->
          <div class="header-right">
@@ -52,9 +53,11 @@
                </div>
             </div>
          </div>
+         </div>
       </header>
       <!------------------ Hero Section Start Here ------------------>
-      <section class="hero career-banner">
+      <section class="hero">
+	    <div class="hero-wrapper">
          <!-- Left Badges -->
          <div class="badges">
             <img src="images/women-owned-badge.svg" alt="Women Owned Badge">
@@ -62,21 +65,21 @@
          </div>
          <!-- Hero Content -->
          <div class="hero-content">
-            <h1 class="heading-text">Grow with a company<br> that grows with you.</h1>
+            <h1 class="heading-text">Driving Mission-Critical <br>Innovation for <br>Government & Beyond</h1>
             <div class="trusted">
                <img src="images/rating-star.svg" alt="Rating Star" class="rating-star">
-               Loved by F5 clients and top Federal Agencies
+               Loved by IT clients and top Federal Agencies
             </div>
             <div class="hero-buttons">
                <button class="btn">Contact Us</button>
                <button class="btn-outline">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none" style="&#10;">
+                  <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none" style="&#10;">
                      <g clip-path="url(#clip0_1_366)">
-                        <path d="M2.28125 1.21872C1.81875 0.934346 1.2375 0.924971 0.765625 1.1906C0.29375 1.45622 0 1.95622 0 2.49997V13.5C0 14.0437 0.29375 14.5437 0.765625 14.8093C1.2375 15.075 1.81875 15.0625 2.28125 14.7812L11.2812 9.28122C11.7281 9.00935 12 8.52497 12 7.99997C12 7.47497 11.7281 6.99372 11.2812 6.71872L2.28125 1.21872Z" fill="#000000"/>
+                        <path d="M2.28125 1.21872C1.81875 0.934346 1.2375 0.924971 0.765625 1.1906C0.29375 1.45622 0 1.95622 0 2.49997V13.5C0 14.0437 0.29375 14.5437 0.765625 14.8093C1.2375 15.075 1.81875 15.0625 2.28125 14.7812L11.2812 9.28122C11.7281 9.00935 12 8.52497 12 7.99997C12 7.47497 11.7281 6.99372 11.2812 6.71872L2.28125 1.21872Z"/>
                      </g>
                      <defs>
                         <clipPath id="clip0_1_366">
-                           <rect width="12" height="16" fill="white"/>
+                           <rect width="12" height="16" />
                         </clipPath>
                      </defs>
                   </svg>
@@ -89,26 +92,73 @@
             <img src="images/phone-ui.svg" alt="Phone UI" class="phone-img">
             <img src="images/laptop-ui.svg" alt="Laptop UI" class="laptop-img">
          </div>
+         </div>
       </section>
-      <!------------------ What we do Section Start Here ------------------>
-      <section class="career-what-we-do sec-padding">
+      <!------------------ Who We Are Section Start Here ------------------>
+      <section class="who-we-are sec-padding" id="who-we-are">
          <div class="container">
             <div class="heading-intro-cont">
-               <h2 class="heading-text">What we do</h2>
-               <div class="content">
-                  <ul>
-                     <li>At Cyber Innovations, we hire top talent and empower them to thrive.</li>
-                     <li>Our people-first culture blends innovation, teamwork, and growth—offering impactful work, supportive benefits, and balance beyond the job.</li>
-                  </ul>
+               <h2 class="heading-text">Who We Are</h2>
+               <div class="heading-info">
+                  <p>Cyber Innovations is a management and technology consulting firm that empowers public sector organizations to modernize operations, enhance service delivery, and strengthen public trust.</p>
+                  <p>We combine large-firm expertise with boutique agility, delivering tailored solutions that help federal agencies achieve mission success.</p>
+               </div>
+            </div>
+            <div class="card-cont">
+               <!-- Card 1 -->
+               <div class="card">
+                  <img src="images/our-vision-icon.svg" alt="Our Vision">
+                  <div class="card-content">
+                     <h3>Our Vision</h3>
+                     <p>Empowering federal agencies to modernize, innovate, and strengthen public trust through secure, future-ready solutions.</p>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="card">
+                  <img src="images/our-approach-icon.svg" alt="Our Approach">
+                  <div class="card-content">
+                     <h3>Our Approach</h3>
+                     <p>We combine strategic consulting and hands-on delivery — blending large-firm expertise with boutique-level agility for measurable impact.</p>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="card">
+                  <img src="images/our-promise-icon.svg" alt="Our Promise">
+                  <div class="card-content">
+                     <h3>Our Promise</h3>
+                     <p>We build lasting partnerships based on integrity, transparency, and a relentless focus on your mission success.</p>
+                  </div>
                </div>
             </div>
          </div>
       </section>
-      <!------------------ Why Join Us Section Start Here ------------------>
-      <section class="why-join-us">
+      <!------------------ What We Do Section Start Here ------------------>
+      <section class="what-we-do">
+         <div class="container">
+         <div class="what-we-do-cont">
+            <div class="heading-intro-cont">
+               <h2 class="heading-text">What We Do</h2>
+               <p>Learn how our consulting and technology services help federal agencies modernize systems, improve operations, and achieve mission success.</p>
+               <img src="images/business-team-reviewing-analytics-together.svg" alt="Business team reviewing analytics together" class="business-team-img">
+            </div>
+            <div class="what-we-do-content">
+               <ul>
+                  <li><a href="#">Enterprise and Solution Architecture<img src="images/right-arrow-icon.svg" alt="Right Arrow icon"></a></li>
+                  <li><a href="#">Business Process Management<img src="images/right-arrow-icon.svg" alt="Right Arrow icon"></a></li>
+                  <li><a href="#">Emerging Technologies Consulting<img src="images/right-arrow-icon.svg" alt="Right Arrow icon"></a></li>
+                  <li><a href="#">Enterprise Portfolio Management<img src="images/right-arrow-icon.svg" alt="Right Arrow icon"></a></li>
+                  <li><a href="#">Enterprise Service Management<img src="images/right-arrow-icon.svg" alt="Right Arrow icon"></a></li>
+                  <li><a href="#">ADA Accessibility Auditing and VPAT/ACR<img src="images/right-arrow-icon.svg" alt="Right Arrow icon"></a></li>
+                  <li><a href="#">AI and Data Solutions<img src="images/right-arrow-icon.svg" alt="Right Arrow icon"></a></li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!------------------ Why choose us Section Start Here ------------------>
+      <section class="why-choose-us sec-padding">
          <div class="container">
             <div class="heading-intro-cont">
-               <h2 class="heading-text">Why Join Us?</h2>
+               <h2 class="heading-text">Why Choose Us</h2>
                <div>
                   <p>We partner closely with clients to define clear goals, develop forward-thinking strategies, and implement solutions that deliver measurable impact.</p>
                </div>
@@ -118,68 +168,26 @@
                <div class="card">
                   <img src="images/government-building-icon.svg" alt="Government Building icon">
                   <div class="card-content">
-                     <h3>Agile by Design</h3>
-                     <p>Experience the flexibility and impact of a small business with room to grow.</p>
+                     <h3>Deep Federal Experience</h3>
+                     <p>Decades of expertise solving complex challenges across government missions and programs.</p>
                   </div>
                </div>
                <!-- Card 2 -->
                <div class="card">
                   <img src="images/badge-with-checkmark-icon.svg" alt="Badge With Checkmark Icon">
                   <div class="card-content">
-                     <h3>Built on Trust</h3>
-                     <p>Thrive in a culture grounded in respect, collaboration, and support.</p>
+                     <h3>Agile, Collaborative Delivery</h3>
+                     <p>Flexible, transparent workflows that keep you informed and engaged every step of the way.</p>
                   </div>
                </div>
                <!-- Card 3 -->
                <div class="card">
                   <img src="images/person-with-star-icon.svg" alt="Person With Star Icon">
                   <div class="card-content">
-                     <h3>Meaningful Work</h3>
-                     <p>Contribute to projects that drive real innovation in government and tech.</p>
+                     <h3>Results That Matter</h3>
+                     <p>Solutions designed to achieve measurable impact and advance your mission objectives.</p>
                   </div>
                </div>
-            </div>
-         </div>
-      </section>
-      <!------------------ Benefits We Offer Section Start Here ------------------>
-      <section class="benefits-we-offer sec-padding">
-         <div class="container">
-            <div class="benefits-we-offer-cont">
-               <div class="heading-intro-cont">
-                  <div>
-                     <h2 class="heading-text">Benefits We Offer</h2>
-                  </div>
-                  <div class="buttons-cont res-hide">
-                     <div class="hero-buttons">
-                        <button class="btn">Contact Us</button>
-                        <button class="btn email-btn">
-                        <img src="images/contact-icon.svg" alt="Contact Icon" class="contact-icon">
-                        Email your resume
-                        </button>
-                     </div>
-                  </div>
-               </div>
-               <div class="benefits-we-offer-p">
-                  <p>If you’re looking for a supportive, growth-oriented workplace that values your skills and potential — we’d love to connect with you.</p>
-               </div>
-               <div class="buttons-cont res-show">
-                  <div class="hero-buttons">
-                     <button class="btn">Contact Us</button>
-                     <button class="btn email-btn">
-                     <img src="images/contact-icon.svg" alt="Contact Icon" class="contact-icon">
-                     Email your resume
-                     </button>
-                  </div>
-               </div>
-               <ul>
-                  <li>Competitive salary with annual performance reviews</li>
-                  <li>401(k) with company match</li>
-                  <li>Generous paid time off (PTO)</li>
-                  <li>Comprehensive health, dental, and vision insurance</li>
-                  <li>Flexible spending accounts (FSA)</li>
-                  <li>Professional training and development support</li>
-                  <li>Employee referral bonuses</li>
-               </ul>
             </div>
          </div>
       </section>
@@ -223,7 +231,7 @@
                   </div>
                </div>
                <div class="footer-section">
-                  <h4>What we do</h4>
+                  <h4>What We Do</h4>
                   <ul>
                      <li><a href="#">Enterprise and Solution Architecture</a></li>
                      <li><a href="#">Business Process Management</a></li>
@@ -235,17 +243,19 @@
                   </ul>
                </div>
                <div class="footer-section">
-                  <h4>Who we are</h4>
+                  <h4>Who We Are</h4>
                   <ul>
-                     <li>Careers</li>
-                     <li>Contacts</li>
+                     <li><a href="#">Careers</a></li>
+                     <li><a href="#">Contacts</a></li>
                   </ul>
                </div>
                <div class="footer-section contact">
                   <h4>Contact Details</h4>
-                  <p><strong>Email:</strong> sales@cyberinnov.com</p>
-                  <p><strong>Phone:</strong> +1 (703) 502-8200</p>
-                  <p><strong>Address:</strong> 511 Utterback Store Rd, Great Falls, VA 22066</p>
+                  <ul>
+                     <li><strong>Email:</strong> <a href="#">sales@cyberinnov.com</a></li>
+                     <li><strong>Phone:</strong> <a href="#">+1 (703) 502-8200</a></li>
+                     <li><strong>Address:</strong> 511 Utterback Store Rd, Great Falls, VA 22066</li>
+                  </ul>
                </div>
                <div class="footer-bottom">
                   <p>© 2025 Cyber Innovations. All rights reserved.</p>
