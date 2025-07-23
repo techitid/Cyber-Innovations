@@ -675,7 +675,9 @@ nav.header-center a:hover {
 	background-repeat: no-repeat;
 	background-size: 17px;
 }
-
+.benefits-we-offer .btn:hover {
+    background-color: transparent;
+}
 
 /*============Contact Us Page Css Start Here============*/
 /*============Hero Section Css Start Here============*/
