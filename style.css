@@ -118,7 +118,8 @@ nav.header-center a {
 	border-bottom: 3px solid transparent;
 }
 
-nav.header-center a:hover,nav.header-center a:active {
+nav.header-center a:hover,
+nav.header-center a:active {
 	border-bottom: 3px solid #FC3535;
 }
 
@@ -675,8 +676,9 @@ nav.header-center a:hover,nav.header-center a:active {
 	background-repeat: no-repeat;
 	background-size: 17px;
 }
+
 .benefits-we-offer .btn:hover {
-    background-color: transparent;
+	background-color: transparent;
 }
 
 /*============Contact Us Page Css Start Here============*/
