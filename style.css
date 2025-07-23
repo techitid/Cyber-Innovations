@@ -331,7 +331,7 @@ p {
 }
 
 .card img {
-	width:55px;
+	width: 55px;
 	transition: transform 0.3s ease;
 	border-radius: 50%;
 	padding: 10px;
@@ -406,7 +406,7 @@ p {
 }
 
 .why-choose-us .card:nth-child(2) {
-	background:#E9E4F6;
+	background: #E9E4F6;
 }
 
 .why-choose-us .card:nth-child(3) {
@@ -421,6 +421,109 @@ p {
 	margin-bottom: 35px;
 }
 
+
+/*============A11y Section Css Start Here============*/
+.a11y-section {
+	padding: 0px 30px 100px;
+}
+
+.a11y-section .a11y-wrapper {
+	margin: auto;
+	background: #ffffff;
+	border-radius: 20px;
+
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.a11y-section .a11y-left,
+.a11y-section .a11y-right {
+	flex: 1 1 50%;
+	padding: 50px;
+}
+
+.a11y-section img.a11y508-logo {
+	margin-bottom: 30px;
+	width: 100%;
+	max-width: 300px;
+}
+
+.a11y-section .a11y-left {
+	background-color: #EEF8FF;
+	color: #ffffff;
+}
+
+.a11y-section .a11y-left h2 {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.a11y-section .a11y-left h2 span {
+	color: #00d3b7;
+}
+
+.a11y-section .a11y-left .amp {
+	font-family: Georgia, serif;
+	font-size: 1.5rem;
+	vertical-align: middle;
+	margin: 0 4px;
+}
+
+.a11y-section .a11y-left p {
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+.a11y-section .a11y-btn {
+	background-color: #336DFE;
+	color: #fff;
+	padding: 11px 51px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.a11y-section .a11y-right {
+	background-color: #f9fbfe;
+	color: #001f3f;
+}
+
+.a11y-section .a11y-right h2 {
+	margin-bottom: 15px;
+}
+
+.a11y-section .a11y-right ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.a11y-section .a11y-right li {
+	padding: 10px 0;
+	border-bottom: 1px solid #e2e8f0;
+	position: relative;
+	padding-left: 33px;
+}
+
+.a11y-section .a11y-right li:last-child {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+
+.a11y-section .a11y-right li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 11px;
+	background-image: url('images/pointing-right-hand.svg');
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: 22px;
+}
 
 /*============Footer Section Css Start Here============*/
 .footer {
@@ -714,6 +817,19 @@ p {
 
 	.what-we-do .business-team-img {
 		margin-bottom: 40px;
+	}
+
+	.a11y-section .a11y-wrapper {
+		flex-direction: column;
+	}
+
+	.a11y-section .a11y-left,
+	.a11y-section .a11y-right {
+		padding: 30px 20px;
+	}
+
+	.a11y-section {
+		padding: 0px 30px 55px;
 	}
 
 	.footer .logo-section img {
