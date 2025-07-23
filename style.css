@@ -6,7 +6,7 @@
 }
 
 .container {
-	max-width: 1240px;
+	max-width: 1320px;
 	margin: 0 auto;
 }
 
@@ -33,6 +33,20 @@ p {
 
 .heading-intro-cont .heading-text {
 	margin-bottom: 25px;
+}
+
+.heading-info {
+	background-color: #F6F6F6;
+	padding: 28px 61px;
+	border-radius: 40px;
+}
+
+.heading-info p {
+	margin-bottom: 10px;
+}
+
+.heading-info p:last-child {
+	margin-bottom: 0px;
 }
 
 /*============Main Header Css Start Here============*/
@@ -84,6 +98,14 @@ p {
 	height: 3px;
 	background: #FC3535;
 	border-radius: 2px;
+}
+
+nav.header-center a {
+	border-bottom: 3px solid transparent;
+}
+
+nav.header-center a:hover {
+	border-bottom: 3px solid #FC3535;
 }
 
 /* Contact info (desktop) */
@@ -234,7 +256,7 @@ p {
 	align-items: center;
 	font-size: 14px;
 	margin: 0 auto 149px;
-	width: 265px;
+	max-width: 265px;
 	min-height: 53px;
 	border-radius: 9999px;
 
@@ -252,6 +274,27 @@ p {
 	flex-wrap: wrap;
 }
 
+.hero .btn:hover {
+	background-color: #336DFE;
+	background: transparent;
+	color: #fff;
+	border: 1px solid #E5E7EB;
+}
+
+.hero .btn-outline:hover {
+	background: #fff;
+	color: #111827;
+	border: none;
+}
+
+.hero .btn-outline .play-icon {
+	fill: #ffffff;
+}
+
+.hero .btn-outline:hover .play-icon {
+	fill: #111827;
+}
+
 .btn,
 .btn-outline {
 	padding: 17px 40px;
@@ -260,6 +303,7 @@ p {
 	cursor: pointer;
 	font-weight: 700;
 	white-space: nowrap;
+	transition: all 0.3s ease;
 }
 
 .btn {
@@ -308,63 +352,45 @@ p {
 
 /*============Who We Are Section Css Start Here============*/
 .who-we-are .heading-intro-cont {
-	display: grid;
-	gap: 30px;
-	grid-template-columns: 2fr 4fr;
 	margin-bottom: 30px;
 }
 
-body .who-we-are .card img {
-	background-color: #ffffff;
-}
 
 /*============Card Section Css Start Here============*/
 .card-cont {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 30px;
 }
 
-.card:nth-child(1) {
-	background: #FFEDED;
-}
-
-.card:nth-child(2) {
-	background: #E9E4F6;
-}
-
-.card:nth-child(3) {
-	background: #EBECFF;
-}
 
 .card {
 	border-radius: 20px;
 	overflow: hidden;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	cursor: pointer;
 	padding: 30px;
+	background-color: #F6F6F6;
+	flex: 1 1 280px;
+	max-width: 400px;
 }
 
-.card:hover {
-	transform: translateY(-8px);
-}
 
 .card img {
 	width: 55px;
-	transition: transform 0.3s ease;
 	border-radius: 50%;
 	padding: 10px;
 	margin-bottom: 25px;
 }
 
-.card:hover img {
-	transform: scale(1.05);
-}
 
 .card h3 {
 	font-size: 20px;
 	color: #111827;
 	margin-bottom: 10px;
+}
+
+.card img {
+	background-color: #ffffff;
 }
 
 /*============What We Do Section Css Start Here============*/
@@ -382,6 +408,8 @@ body .who-we-are .card img {
 	display: grid;
 	gap: 30px;
 	grid-template-columns: 3fr 7fr;
+	background-color: #F7F6F4;
+	padding: 50px;
 }
 
 .what-we-do li {
@@ -391,7 +419,7 @@ body .who-we-are .card img {
 .what-we-do li a {
 	display: flex;
 	justify-content: space-between;
-	background-color: #DBFBE3;
+	background-color: #ffffff;
 	padding: 20px;
 	margin-bottom: 19px;
 	border-radius: 20px;
@@ -399,6 +427,15 @@ body .who-we-are .card img {
 	color: #00373E;
 	align-items: center;
 	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+
+.what-we-do li:last-child a {
+	margin-bottom: 0px;
+}
+
+.what-we-do li:hover a {
+	transform: translateY(-3px);
 }
 
 .what-we-do li img {
@@ -411,26 +448,22 @@ body .who-we-are .card img {
 /*============Why choose us Section Css Start Here============*/
 
 
-.why-choose-us .card {
-	background: #F6F6F6;
+.why-choose-us .card:nth-child(1) {
+	background: #FFEDED;
 }
 
+.why-choose-us .card:nth-child(2) {
+	background: #DBFBE3;
+}
+
+.why-choose-us .card:nth-child(3) {
+	background: #EBECFF;
+}
 
 .why-choose-us .heading-intro-cont {
 	margin-bottom: 35px;
 }
 
-.card:nth-child(1) img {
-	background-color: #DCEAF4;
-}
-
-.card:nth-child(2) img {
-	background-color: #FBE4DE;
-}
-
-.card:nth-child(3) img {
-	background-color: #DBFBE3;
-}
 
 /*============A11y Section Css Start Here============*/
 .a11y-section {
@@ -522,6 +555,10 @@ body .who-we-are .card img {
 	padding-bottom: 0px;
 }
 
+.a11y-section .a11y-btn:hover {
+	background-color: #1946b7;
+}
+
 .a11y-section .a11y-right li::before {
 	content: "";
 	position: absolute;
@@ -543,7 +580,9 @@ body .who-we-are .card img {
 }
 
 .career-banner .btn-outline,
-.career-banner .heading-text {
+.career-banner .heading-text,
+.contactus-banner .btn-outline,
+.contactus-banner .heading-text {
 	color: #000000;
 }
 
@@ -644,6 +683,30 @@ body .who-we-are .card img {
 	display: none;
 }
 
+/*============Contact Us Page Css Start Here============*/
+/*============Hero Section Css Start Here============*/
+.hero.contact-banner {
+	background-color: #4BCBEF;
+}
+
+.contact-info .card-cont {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+
+.contact-info .card:nth-child(2) {
+	background-color: #DCEAF4;
+}
+
+.contact-info .card:nth-child(4) {
+	background-color: #E9E4F6;
+}
+
+.contact-info .card img {
+	background-color: #ffffff;
+}
+
 /*============Footer Section Css Start Here============*/
 .footer {
 	margin: 0px 30px;
@@ -694,18 +757,17 @@ body .who-we-are .card img {
 	margin-bottom: 60px;
 	font-weight: 500;
 	color: #ffffff;
+	margin-bottom: 14px;
+	text-decoration: none;
 }
 
 .footer .logo-section p {
 	margin-bottom: 60px;
 }
 
-.footer .footer-section ul li,
-.footer .footer-section li a {
-	margin-bottom: 14px;
-	text-decoration: none;
+.footer .footer-section ul li:hover a {
+	text-decoration: underline;
 }
-
 
 .footer .footer-section li a {
 	line-height: 16px;
@@ -747,6 +809,10 @@ body .who-we-are .card img {
 	line-height: 16px;
 	text-align: center;
 	color: #6B7280;
+}
+
+.footer .social-icons {
+	display: none;
 }
 
 /* Responsive Styles */
@@ -858,6 +924,10 @@ body .who-we-are .card img {
 		width: 28%;
 	}
 
+	.what-we-do .business-team-img {
+		padding-top: 20px;
+	}
+
 	.footer .footer-section,
 	.footer .footer-section:nth-child(3) {
 		flex: 0 0 100%;
@@ -882,17 +952,34 @@ body .who-we-are .card img {
 }
 
 @media (max-width:767px) {
+	.hero .hero-images img {
+		position: inherit;
+	}
+
+	.hero .trusted {
+		margin: 0 auto 30px;
+	}
+
+	.hero .hero-images {
+		justify-content: center;
+	}
+
 	.sec-padding {
 		padding: 55px 30px;
 	}
 
 	.heading-text {
-		font-size: 30px;
+		font-size: 36px;
 		line-height: 37px;
 	}
 
+	.heading-info {
+		padding: 20px;
+		border-radius: 25px;
+	}
+
 	h2.heading-text {
-		font-size: 25px;
+		font-size: 33px;
 		line-height: 37px;
 	}
 
@@ -934,6 +1021,7 @@ body .who-we-are .card img {
 	.card {
 		margin-bottom: 40px;
 		padding: 15px;
+		max-width: 100%;
 	}
 
 	.card:last-child {
@@ -944,8 +1032,18 @@ body .who-we-are .card img {
 		margin-bottom: 15px;
 	}
 
+	.what-we-do .what-we-do-cont {
+		padding: 20px;
+	}
+
+	.what-we-do .heading-intro-cont {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.what-we-do .business-team-img {
-		margin-bottom: 40px;
+		max-width: 300px;
+		margin: 0 auto 40px;
 	}
 
 	.a11y-section .a11y-wrapper {
