@@ -310,6 +310,10 @@ p {
 	margin-bottom: 30px;
 }
 
+body .who-we-are .card img {
+	background-color: #ffffff;
+}
+
 /*============Card Section Css Start Here============*/
 .card-cont {
 	display: grid;
@@ -317,8 +321,19 @@ p {
 	gap: 30px;
 }
 
+.card:nth-child(1) {
+	background: #FFEDED;
+}
+
+.card:nth-child(2) {
+	background: #E9E4F6;
+}
+
+.card:nth-child(3) {
+	background: #EBECFF;
+}
+
 .card {
-	background: #F6F6F6;
 	border-radius: 20px;
 	overflow: hidden;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -335,16 +350,7 @@ p {
 	transition: transform 0.3s ease;
 	border-radius: 50%;
 	padding: 10px;
-	background-color: #DCEAF4;
 	margin-bottom: 25px;
-}
-
-.card:nth-child(2) img {
-	background-color: #FBE4DE;
-}
-
-.card:nth-child(3) img {
-	background-color: #DBFBE3;
 }
 
 .card:hover img {
@@ -401,26 +407,26 @@ p {
 /*============Why choose us Section Css Start Here============*/
 
 
-.why-choose-us .card:nth-child(1) {
-	background: #FFEDED;
+.why-choose-us .card {
+	background: #F6F6F6;
 }
 
-.why-choose-us .card:nth-child(2) {
-	background: #E9E4F6;
-}
-
-.why-choose-us .card:nth-child(3) {
-	background: #EBECFF;
-}
-
-.why-choose-us .card img {
-	background-color: #ffffff;
-}
 
 .why-choose-us .heading-intro-cont {
 	margin-bottom: 35px;
 }
 
+.card:nth-child(1) img {
+	background-color: #DCEAF4;
+}
+
+.card:nth-child(2) img {
+	background-color: #FBE4DE;
+}
+
+.card:nth-child(3) img {
+	background-color: #DBFBE3;
+}
 
 /*============A11y Section Css Start Here============*/
 .a11y-section {
