@@ -4,9 +4,11 @@
 	box-sizing: border-box;
 	font-family: 'Bricolage Grotesque', sans-serif;
 }
+
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
+
 .container {
 	max-width: 1320px;
 	margin: 0 auto;
@@ -29,8 +31,13 @@ p {
 	font-size: 17px;
 }
 
-.sec-padding {
+.sec-padding,
+.career-what-we-do.sec-padding {
 	padding: 100px 30px;
+}
+
+.career-why-join-us.sec-padding {
+	padding: 0px 30px;
 }
 
 .heading-intro-cont .heading-text {
@@ -55,6 +62,7 @@ p {
 .main-header {
 	margin: 0px 30px;
 }
+
 .main-header-wrapper {
 	display: flex;
 	align-items: center;
@@ -64,7 +72,7 @@ p {
 	flex-wrap: wrap;
 	position: relative;
 	max-width: 1320px;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 /* Logo + Toggle (inline) */
@@ -214,7 +222,8 @@ nav.header-center a:hover {
 	margin: 0px 30px;
 
 }
-.hero-wrapper{
+
+.hero-wrapper {
 	background-color: #336DFE;
 	color: #ffffff;
 	padding: 47px 15px 42px;
@@ -227,7 +236,7 @@ nav.header-center a:hover {
 	align-items: center;
 	gap: 30px;
 	max-width: 1320px;
-    margin: 0 auto;
+	margin: 0 auto;
 
 }
 
@@ -460,19 +469,23 @@ nav.header-center a:hover {
 /*============Why choose us Section Css Start Here============*/
 
 
-.why-choose-us .card:nth-child(1) {
+.why-choose-us .card:nth-child(1),
+.career-why-join-us .card:nth-child(1) {
 	background: #FFEDED;
 }
 
-.why-choose-us .card:nth-child(2) {
+.why-choose-us .card:nth-child(2),
+.career-why-join-us .card:nth-child(2) {
 	background: #DBFBE3;
 }
 
-.why-choose-us .card:nth-child(3) {
+.why-choose-us .card:nth-child(3),
+.career-why-join-us.card:nth-child(3) {
 	background: #EBECFF;
 }
 
-.why-choose-us .heading-intro-cont {
+.why-choose-us .heading-intro-cont,
+.career-why-join-us .heading-intro-cont {
 	margin-bottom: 35px;
 }
 
@@ -587,8 +600,12 @@ nav.header-center a:hover {
 
 /*============Career page Css Start Here============*/
 /*============Hero Section Css Start Here============*/
-.hero.career-banner {
+.hero .career-banner {
 	background-color: #EF8F4B;
+}
+
+.hero .career-banner .btn-outline .play-icon {
+	fill: #000000;
 }
 
 .career-banner .btn-outline,
@@ -598,34 +615,7 @@ nav.header-center a:hover {
 	color: #000000;
 }
 
-/*============What we do Section Css Start Here============*/
-.career-what-we-do .content ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	width: 100%;
-	gap: 10px;
-}
-
-.career-what-we-do .content ul li {
-	background-color: #EEF8FF;
-	border-radius: 40px;
-	padding: 20px 60px;
-	display: flex;
-	align-items: center;
-}
-
 /*============Why Join Us Section Css Start Here============*/
-
-.why-join-us .heading-intro-cont {
-	margin-bottom: 35px;
-}
-
-.why-join-us ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	width: 100%;
-	gap: 10px;
-}
 
 
 .benefits-we-offer .benefits-we-offer-cont {
@@ -633,14 +623,9 @@ nav.header-center a:hover {
 	padding: 50px;
 }
 
-.benefits-we-offer .heading-intro-cont {
-	display: grid;
-	gap: 30px;
-	grid-template-columns: 3fr 2fr;
-}
 
 .benefits-we-offer-p {
-	margin-bottom: 35px;
+	margin-bottom: 15px;
 }
 
 .benefits-we-offer .heading-intro-cont p {
@@ -669,6 +654,7 @@ nav.header-center a:hover {
 
 .benefits-we-offer ul {
 	list-style-type: none;
+	margin-bottom: 25px;
 }
 
 .benefits-we-offer li {
@@ -690,10 +676,6 @@ nav.header-center a:hover {
 	background-size: 17px;
 }
 
-
-.benefits-we-offer .res-show {
-	display: none;
-}
 
 /*============Contact Us Page Css Start Here============*/
 /*============Hero Section Css Start Here============*/
@@ -903,7 +885,7 @@ nav.header-center a:hover {
 		line-height: 51px;
 	}
 
-	.hero-wrapper{
+	.hero-wrapper {
 		flex-direction: column;
 		padding: 47px 15px 0px;
 
@@ -976,8 +958,13 @@ nav.header-center a:hover {
 		justify-content: center;
 	}
 
-	.sec-padding {
+	.sec-padding,
+	.career-what-we-do.sec-padding {
 		padding: 55px 30px;
+	}
+
+	.career-why-join-us.sec-padding {
+		padding: 0px 30px;
 	}
 
 	.heading-text {
@@ -1025,7 +1012,6 @@ nav.header-center a:hover {
 	.who-we-are .heading-intro-cont,
 	.card-cont,
 	.what-we-do .what-we-do-cont,
-	.career-what-we-do .content ul,
 	.benefits-we-offer .heading-intro-cont {
 		display: inherit;
 	}
@@ -1069,19 +1055,6 @@ nav.header-center a:hover {
 
 	.a11y-section {
 		padding: 0px 30px 55px;
-	}
-
-	.career-what-we-do .content ul li {
-		margin-bottom: 20px;
-	}
-
-	.benefits-we-offer .res-hide {
-		display: none;
-	}
-
-	.benefits-we-offer .res-show {
-		display: block;
-		margin-bottom: 30px;
 	}
 
 	.benefits-we-offer-p {
