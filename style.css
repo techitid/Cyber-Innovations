@@ -17,6 +17,10 @@
 	letter-spacing: 0.5px;
 }
 
+h2.heading-text {
+	font-size: 50px;
+}
+
 p {
 	color: #111827;
 	font-weight: 400;
@@ -180,7 +184,7 @@ p {
 /*============Hero Section Css Start Here============*/
 .hero {
 	background-color: #336DFE;
-	color: white;
+	color: #ffffff;
 	padding: 47px 15px 42px;
 	border-radius: 30px;
 	position: relative;
@@ -531,6 +535,115 @@ body .who-we-are .card img {
 	background-size: 22px;
 }
 
+
+/*============Career page Css Start Here============*/
+/*============Hero Section Css Start Here============*/
+.hero.career-banner {
+	background-color: #EF8F4B;
+}
+
+.career-banner .btn-outline,
+.career-banner .heading-text {
+	color: #000000;
+}
+
+/*============What we do Section Css Start Here============*/
+.career-what-we-do .content ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	gap: 10px;
+}
+
+.career-what-we-do .content ul li {
+	background-color: #EEF8FF;
+	border-radius: 40px;
+	padding: 20px 60px;
+	display: flex;
+	align-items: center;
+}
+
+/*============Why Join Us Section Css Start Here============*/
+
+.why-join-us .heading-intro-cont {
+	margin-bottom: 35px;
+}
+
+.why-join-us ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	gap: 10px;
+}
+
+
+.benefits-we-offer .benefits-we-offer-cont {
+	background-color: #F6F6F6;
+	padding: 50px;
+}
+
+.benefits-we-offer .heading-intro-cont {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 3fr 2fr;
+}
+
+.benefits-we-offer-p {
+	margin-bottom: 35px;
+}
+
+.benefits-we-offer .heading-intro-cont p {
+	line-height: normal;
+}
+
+.benefits-we-offer .btn {
+	border: 1px solid #5C5C5C;
+}
+
+.benefits-we-offer .hero-buttons {
+	display: flex;
+	gap: 10px;
+
+}
+
+.benefits-we-offer .email-btn {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.benefits-we-offer .contact-icon {
+	width: 20px;
+}
+
+.benefits-we-offer ul {
+	list-style-type: none;
+}
+
+.benefits-we-offer li {
+	padding: 10px 0;
+	position: relative;
+	padding-left: 29px;
+}
+
+.benefits-we-offer li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 15px;
+	background-image: url(images/check-icon.svg);
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: 17px;
+}
+
+
+.benefits-we-offer .res-show {
+	display: none;
+}
+
 /*============Footer Section Css Start Here============*/
 .footer {
 	margin: 0px 30px;
@@ -707,6 +820,11 @@ body .who-we-are .card img {
 		line-height: 51px;
 	}
 
+	h2.heading-text {
+		font-size: 40px;
+		line-height: 51px;
+	}
+
 	.hero {
 		flex-direction: column;
 		padding: 47px 15px 0px;
@@ -773,13 +891,15 @@ body .who-we-are .card img {
 		line-height: 37px;
 	}
 
+	h2.heading-text {
+		font-size: 25px;
+		line-height: 37px;
+	}
+
 	.hero .trusted {
 		margin: 0 auto 30px;
 	}
 
-	.hero .hero-images img {
-		position: inherit;
-	}
 
 	.hero .hero-images {
 		justify-content: center;
@@ -802,9 +922,12 @@ body .who-we-are .card img {
 		padding: 10px 19px;
 	}
 
+	.hero .hero-images img,
 	.who-we-are .heading-intro-cont,
 	.card-cont,
-	.what-we-do .what-we-do-cont {
+	.what-we-do .what-we-do-cont,
+	.career-what-we-do .content ul,
+	.benefits-we-offer .heading-intro-cont {
 		display: inherit;
 	}
 
@@ -836,6 +959,23 @@ body .who-we-are .card img {
 
 	.a11y-section {
 		padding: 0px 30px 55px;
+	}
+
+	.career-what-we-do .content ul li {
+		margin-bottom: 20px;
+	}
+
+	.benefits-we-offer .res-hide {
+		display: none;
+	}
+
+	.benefits-we-offer .res-show {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	.benefits-we-offer-p {
+		margin-bottom: 15px;
 	}
 
 	.footer .logo-section img {
