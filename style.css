@@ -605,7 +605,8 @@ nav.header-center a:active {
 	background-color: #EF8F4B;
 }
 
-.hero .career-banner .btn-outline .play-icon {
+.hero .career-banner .btn-outline .play-icon,
+.hero.contactus-banner .btn-outline .play-icon {
 	fill: #000000;
 }
 
@@ -683,7 +684,7 @@ nav.header-center a:active {
 
 /*============Contact Us Page Css Start Here============*/
 /*============Hero Section Css Start Here============*/
-.hero.contact-banner {
+.hero.contactus-banner .hero-wrapper {
 	background-color: #4BCBEF;
 }
 
@@ -693,16 +694,53 @@ nav.header-center a:active {
 	gap: 30px;
 }
 
-.contact-info .card:nth-child(2) {
-	background-color: #DCEAF4;
+.contact-info .card-cont .card {
+	max-width: 100%;
 }
 
-.contact-info .card:nth-child(4) {
-	background-color: #E9E4F6;
+.contact-info h2,
+.contact-info h4 {
+	margin-bottom: 15px;
 }
 
-.contact-info .card img {
-	background-color: #ffffff;
+.contact-info p {
+	margin-bottom: 30px;
+}
+
+.contact-info p:last-child {
+	margin-bottom: 0px;
+}
+
+.contact-info .card-content ul {
+	list-style-type: none;
+}
+
+.contact-info .card-content ul img {
+	width: 17px;
+	border-radius: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-right: 7px;
+	background-color: transparent;
+}
+
+.contact-info .card-content ul li {
+	margin-bottom: 8px;
+}
+
+.contact-info .card-content ul li:last-child {
+	margin-bottom: 0px;
+}
+
+.contact-info .card-content ul li a {
+	display: flex;
+	align-items: center;
+	color: #0035BC;
+	text-decoration: none;
+}
+
+.contact-info .card-content ul li:hover a {
+	text-decoration: underline;
 }
 
 /*============Footer Section Css Start Here============*/
@@ -1075,6 +1113,10 @@ nav.header-center a:active {
 
 	.benefits-we-offer-p {
 		margin-bottom: 15px;
+	}
+
+	.contact-info .card-cont {
+		display: inherit;
 	}
 
 	.footer .logo-section img {
