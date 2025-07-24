@@ -21,7 +21,7 @@
             <!-- Navigation (desktop) -->
             <nav class="header-center">
                <a href="index.html">Home</a>
-               <a href="#who-we-are">Who We Are</a>
+               <a href="index.html#who-we-are">Who We Are</a>
                <a href="#">What We Do</a>
                <a href="career.html">Career</a>
                <a href="contact-us.html">Contact Us</a>
@@ -198,7 +198,7 @@
                   <h4>Who We Are</h4>
                   <ul>
                      <li><a href="career.html">Careers</a></li>
-                     <li><a href="#">Contacts</a></li>
+                     <li><a href="contact-us.html">Contacts</a></li>
                   </ul>
                </div>
                <div class="footer-section contact">
@@ -215,37 +215,6 @@
             </div>
          </div>
       </footer>
-      <script>
-         const toggle = document.getElementById('menu-toggle');
-         const mobileMenu = document.getElementById('mobile-menu');
-         
-         toggle.addEventListener('click', () => {
-           toggle.classList.toggle('open');
-           mobileMenu.classList.toggle('show');
-         });
-         
-         const navLinks = document.querySelectorAll("nav.header-center a");
-         
-         // On page load – set active class based on localStorage
-         window.addEventListener("DOMContentLoaded", function () {
-         const activeHref = localStorage.getItem("activeLink");
-         if (activeHref) {
-         navLinks.forEach(link => {
-         if (link.href === activeHref) {
-          link.classList.add("active");
-         } else {
-          link.classList.remove("active");
-         }
-         });
-         }
-         });
-         
-         // On menu click – set active class & store link in localStorage
-         navLinks.forEach(link => {
-         link.addEventListener("click", function () {
-         localStorage.setItem("activeLink", this.href);
-         });
-         });
-      </script>
+      <script src="js/script.js"></script>
    </body>
 </html>
