@@ -1048,6 +1048,18 @@ nav.header-center a:active {
 		margin: 0 auto 40px;
 	}
 
+	.benefits-we-offer .benefits-we-offer-cont {
+		padding: 20px;
+	}
+
+	.benefits-we-offer .hero-buttons {
+		display: inherit;
+	}
+
+	.benefits-we-offer .hero-buttons button.btn:nth-child(1) {
+		margin-bottom: 10px;
+	}
+
 	.a11y-section .a11y-wrapper {
 		flex-direction: column;
 	}
