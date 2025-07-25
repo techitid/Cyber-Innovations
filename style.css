@@ -1199,7 +1199,9 @@ nav.header-center a:active {
 	.card-wrap {
 		padding: 15px;
 	}
-
+	.card-wrap h3 {
+		font-size: 28px;
+	}
 	.footer .logo-section img {
 		width: 165px;
 	}
