@@ -1,5 +1,4 @@
-
-  const $ = s => document.querySelectorAll(s),
+const $ = s => document.querySelectorAll(s),
         id = i => document.getElementById(i),
         norm = h => (a = document.createElement('a'), a.href = h, a.pathname + a.hash);
 
