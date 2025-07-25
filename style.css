@@ -1199,8 +1199,11 @@ nav.header-center a:active {
 	}
 
 	.card-wrap {
-		padding: 15px;
+		padding:20px;
 	}
+	.card-cont-wrap ul {
+        padding-top:2px;
+    }
 	.card-wrap h3 {
 		font-size:25px;
 	}
