@@ -851,7 +851,9 @@ nav.header-center a:active {
 .skip-to-content-link:focus {
 	transform: translate(-50%, 0%);
 }
-
+.ai-data-cont .external-new-window-open-img img, .ada-cont .external-new-window-open-img img {
+    vertical-align: bottom;
+}
 /*============Footer Section Css Start Here============*/
 .footer {
 	margin: 0px 30px;
