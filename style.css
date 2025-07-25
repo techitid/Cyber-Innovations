@@ -36,7 +36,8 @@ p {
 	padding: 100px 30px;
 }
 
-.career-why-join-us.sec-padding {
+.career-why-join-us.sec-padding,
+.our-capabilities.sec-padding {
 	padding: 0px 30px;
 }
 
@@ -50,11 +51,15 @@ p {
 	border-radius: 40px;
 }
 
-.heading-info p {
-	margin-bottom: 10px;
+.heading-info p,
+.card-wrap p,
+.card-wrap li {
+	margin-bottom: 20px;
 }
 
-.heading-info p:last-child {
+.heading-info p:last-child,
+.card-wrap p:last-child,
+.card-wrap li:last-child {
 	margin-bottom: 0px;
 }
 
@@ -598,6 +603,63 @@ nav.header-center a:active {
 	background-size: 22px;
 }
 
+/*============What We Do Page Css Start Here============*/
+/*============Hero Section Css Start Here============*/
+.what-we-do-banner.hero-wrapper {
+	background-color: #4733FE;
+}
+
+.architecture-cont {
+	background: #e9f4fd;
+}
+
+.bpm-cont {
+	background-color: #FBE4DE;
+}
+
+.emerging-tech-cont {
+	background-color: #DFF1E6;
+}
+
+.epm-cont {
+	background-color: #E9E4F6;
+}
+
+.esm-cont {
+	background-color: #FFF7E6;
+}
+
+.ada-cont {
+	background-color: #DDF5F5;
+}
+
+.ai-data-cont {
+	background-color: #FBEBFF;
+}
+
+.card-wrap {
+	padding: 50px;
+	margin-bottom: 100px;
+}
+
+.card-cont-wrap {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.card-wrap h3 {
+	font-size: 38px;
+	letter-spacing: 0.5px;
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+
+.card-cont-wrap ul {
+	padding-left: 17px;
+	padding-top: 20px;
+}
+
 
 /*============Career page Css Start Here============*/
 /*============Hero Section Css Start Here============*/
@@ -682,54 +744,70 @@ nav.header-center a:active {
 	background-color: transparent;
 }
 
+.what-we-do-banner.hero-wrapper {
+	background-color: #4733FE;
+}
+
 /*============Contact Us Page Css Start Here============*/
-/*============Hero Section Css Start Here============*/
-.hero.contactus-banner .hero-wrapper{
+.hero.contactus-banner .hero-wrapper {
 	background-color: #4BCBEF;
 }
+
 .contact-info .card-cont {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
 }
+
 .contact-info .card-cont .card {
-    max-width: 100%;
+	max-width: 100%;
 }
-.contact-info h2,.contact-info h4{
-    margin-bottom:15px;
+
+.contact-info h2,
+.contact-info h4 {
+	margin-bottom: 15px;
 }
+
 .contact-info p {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
-.contact-info p:last-child{
-    margin-bottom:0px;
+
+.contact-info p:last-child {
+	margin-bottom: 0px;
 }
+
 .contact-info .card-content ul {
-    list-style-type: none;
+	list-style-type: none;
 }
+
 .contact-info .card-content ul img {
-    width: 17px;
-    border-radius: 0px;
-    padding: 0px;
-    margin-bottom: 0px;
-    margin-right: 7px;
-    background-color: transparent;
+	width: 17px;
+	border-radius: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-right: 7px;
+	background-color: transparent;
 }
+
 .contact-info .card-content ul li {
-    margin-bottom: 8px;
+	margin-bottom: 8px;
 }
-.contact-info .card-content ul li:last-child{
-    margin-bottom:0px;
+
+.contact-info .card-content ul li:last-child {
+	margin-bottom: 0px;
 }
+
 .contact-info .card-content ul li a {
-    display: flex;
-    align-items: center;
-    color: #0035BC;
-    text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: #0035BC;
+	text-decoration: none;
 }
+
 .contact-info .card-content ul li:hover a {
-    text-decoration: underline;
+	text-decoration: underline;
 }
+
 /*============Footer Section Css Start Here============*/
 .footer {
 	margin: 0px 30px;
@@ -992,10 +1070,6 @@ nav.header-center a:active {
 		padding: 55px 30px;
 	}
 
-	.career-why-join-us.sec-padding {
-		padding: 0px 30px;
-	}
-
 	.heading-text {
 		font-size: 36px;
 		line-height: 37px;
@@ -1101,9 +1175,31 @@ nav.header-center a:active {
 	.benefits-we-offer-p {
 		margin-bottom: 15px;
 	}
-.contact-info .card-cont {
-    display: inherit;
-}
+
+	.contact-info .card-cont {
+		display: inherit;
+	}
+
+	.card-wrap {
+		margin-bottom: 55px;
+	}
+
+	.card-wrap .card-cont-wrap {
+		flex-direction: column;
+	}
+
+	.card-wrap .card-cont-wrap.reverse {
+		flex-direction: column-reverse;
+	}
+
+	.card-cont-wrap img {
+		max-width: 300px;
+	}
+
+	.card-wrap {
+		padding: 15px;
+	}
+
 	.footer .logo-section img {
 		width: 165px;
 	}
