@@ -9,33 +9,33 @@
     id('mobile-menu')?.classList.toggle('show');
   });
 
-  window.addEventListener('DOMContentLoaded', () => {
-    const links = $('nav.header-center a');
-    let active = localStorage.getItem('activeLink');
+ // Run when the DOM is fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    const currentHash = window.location.hash;
 
-    if (!active) {
-      let home = [...links].find(l => ['#home', '/', 'index.html'].some(h => l.getAttribute('href')?.includes(h)));
-      if (home) {
-        active = norm(home.href);
-        localStorage.setItem('activeLink', active);
+    // Select all nav links in both desktop and mobile nav
+    const navLinks = document.querySelectorAll(".header-center a, .mobile-menu nav a, footer nav a");
+
+    let matchFound = false;
+
+    navLinks.forEach(link => {
+      const linkHref = link.getAttribute("href");
+
+      if (linkHref === currentPath || (currentPath === "index.html" && linkHref.includes(currentHash))) {
+        link.classList.add("active");
+        matchFound = true;
+      } else {
+        link.classList.remove("active"); // Remove if previously active
       }
-    }
-
-    if (!active || active === '#' || active.startsWith('javascript')) {
-      localStorage.removeItem('activeLink');
-      return;
-    }
-
-    links.forEach(l => {
-      const h = l.getAttribute('href');
-      l.classList.toggle('active', norm(l.href) === active && h !== '#' && !h.startsWith('javascript'));
     });
-  });
 
-  $('nav a, footer a').forEach(l => {
-    l.addEventListener('click', e => {
-      const h = l.getAttribute('href');
-      if (!h || h === '#' || h.startsWith('javascript')) return e.preventDefault();
-      localStorage.setItem('activeLink', norm(l.href));
-    });
+    // If no match found (e.g., direct URL with hash only), set Home active by default
+    if (!matchFound) {
+      navLinks.forEach(link => {
+        if (link.getAttribute("href") === "index.html") {
+          link.classList.add("active");
+        }
+      });
+    }
   });
