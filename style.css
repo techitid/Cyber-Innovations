@@ -1255,6 +1255,9 @@ nav.header-center a:active {
 	.footer .logo-section img {
 		width: 165px;
 	}
+	.a11y-section img.a11y508-logo {
+       max-width: 200px;
+    }
 }
 
 @media (max-width:575px) {
