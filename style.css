@@ -305,13 +305,11 @@ nav.header-center a:active {
 	background-color: #336DFE;
 	background: transparent;
 	color: #fff;
-	border: 1px solid #E5E7EB;
 }
 
 .hero .btn-outline:hover {
 	background: #fff;
 	color: #111827;
-	border: none;
 }
 
 .hero .btn-outline .play-icon {
@@ -331,12 +329,12 @@ nav.header-center a:active {
 	font-weight: 700;
 	white-space: nowrap;
 	transition: all 0.3s ease;
+	border: 1px solid #E5E7EB;
 }
 
 .btn {
 	background: #fff;
 	color: #111827;
-	border: none;
 }
 
 
@@ -441,6 +439,7 @@ nav.header-center a:active {
 
 .what-we-do li {
 	list-style-type: none;
+	transition: all 0.3s ease;
 }
 
 .what-we-do li a {
@@ -454,15 +453,11 @@ nav.header-center a:active {
 	color: #00373E;
 	align-items: center;
 	text-decoration: none;
-	transition: transform 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .what-we-do li:last-child a {
 	margin-bottom: 0px;
-}
-
-.what-we-do li:hover a {
-	transform: translateY(-3px);
 }
 
 .what-we-do li img {
@@ -472,6 +467,11 @@ nav.header-center a:active {
 	padding: 5px;
 }
 
+
+.what-we-do.sec-wrapper li:hover a {
+    border: 1px solid #cbcbcb;
+    text-decoration: underline;
+}
 /*============Why choose us Section Css Start Here============*/
 
 
@@ -557,6 +557,7 @@ nav.header-center a:active {
 	padding: 11px 51px;
 	text-decoration: none;
 	display: inline-block;
+	border:3px solid #336DFE;
 }
 
 .a11y-section .a11y-right {
