@@ -329,7 +329,7 @@ nav.header-center a:active {
 	font-weight: 700;
 	white-space: nowrap;
 	transition: all 0.3s ease;
-	border:2px solid #ffffff;
+	border: 2px solid #ffffff;
 }
 
 .btn {
@@ -337,9 +337,11 @@ nav.header-center a:active {
 	color: #111827;
 }
 
-.btn:focus-visible, .btn-outline:focus-visible{
-    outline:5px double #000;
+.btn:focus-visible,
+.btn-outline:focus-visible {
+	outline: 5px double #000;
 }
+
 .btn-outline {
 	background: transparent;
 	color: #fff;
@@ -471,9 +473,10 @@ nav.header-center a:active {
 
 
 .what-we-do.sec-wrapper li:hover a {
-    border: 1px solid #cbcbcb;
-    text-decoration: underline;
+	border: 1px solid #cbcbcb;
+	text-decoration: underline;
 }
+
 /*============Why choose us Section Css Start Here============*/
 
 
@@ -559,7 +562,7 @@ nav.header-center a:active {
 	padding: 11px 51px;
 	text-decoration: none;
 	display: inline-block;
-	border:3px solid #316BFE;
+	border: 3px solid #316BFE;
 }
 
 .a11y-section .a11y-right {
@@ -712,6 +715,7 @@ nav.header-center a:active {
 .benefits-we-offer .email-btn {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 10px;
 }
 
@@ -768,11 +772,13 @@ nav.header-center a:active {
 
 .contact-info h2,
 .contact-info h3 {
-	margin-bottom:5px;
+	margin-bottom: 5px;
 }
+
 .contact-info h3 {
-    font-size: 17px;
+	font-size: 17px;
 }
+
 .contact-info p {
 	margin-bottom: 30px;
 }
@@ -813,37 +819,37 @@ nav.header-center a:active {
 	text-decoration: underline;
 }
 
-span.external-new-window-open-img {
-    position: relative;
-}
 .external-new-window-open-img img {
-    position: absolute;
-    top: 50%;
-    left: 3px;
-    transform: translateY(-50%);
+	margin-left: 3px;
+	vertical-align: middle;
 }
+
 .a11y-section .external-new-window-open-img img,
-.hero-content .external-new-window-open-img img{
-    filter: invert(1);
+.hero-content .external-new-window-open-img img {
+	filter: invert(1);
 }
-.hero-content .btn-outline:hover .external-new-window-open-img img,.career-banner .external-new-window-open-img img,.contactus-banner .external-new-window-open-img img{
-    filter: invert(0);
+
+.hero-content .btn-outline:hover .external-new-window-open-img img,
+.career-banner .external-new-window-open-img img,
+.contactus-banner .external-new-window-open-img img {
+	filter: invert(0);
 }
+
 .skip-to-content-link {
-  background:#000000;
-  color: white;
-  padding: 8px;
-  height: 30px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  transition: transform 0.3s;
-  z-index: 1000;
-  text-decoration: none;
+	background: #000000;
+	color: white;
+	padding: 8px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	transition: transform 0.3s;
+	z-index: 1000;
+	text-decoration: none;
 }
 
 .skip-to-content-link:focus {
-  transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
 }
 
 /*============Footer Section Css Start Here============*/
@@ -898,16 +904,17 @@ span.external-new-window-open-img {
 	color: #ffffff;
 	margin-bottom: 14px;
 }
-.footer .footer-section li a
-{
-	text-decoration:underline;
+
+.footer .footer-section li a {
+	text-decoration: underline;
 }
+
 .footer .logo-section p {
 	margin-bottom: 60px;
 }
 
 .footer .footer-section ul li:hover a {
-	text-decoration:none;
+	text-decoration: none;
 }
 
 .footer .footer-section li a {
@@ -946,7 +953,7 @@ span.external-new-window-open-img {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 16px;
-	color:#ffffff;
+	color: #ffffff;
 }
 
 .footer .social-icons {
@@ -1145,7 +1152,7 @@ span.external-new-window-open-img {
 
 	.btn,
 	.btn-outline {
-		padding: 10px 19px;
+		padding: 10px 15px;
 	}
 
 	.hero .hero-images img,
@@ -1188,14 +1195,6 @@ span.external-new-window-open-img {
 		padding: 20px;
 	}
 
-	.benefits-we-offer .hero-buttons {
-		display: inherit;
-	}
-
-	.benefits-we-offer .hero-buttons button.btn:nth-child(1) {
-		margin-bottom: 10px;
-	}
-
 	.a11y-section .a11y-wrapper {
 		flex-direction: column;
 	}
@@ -1220,9 +1219,11 @@ span.external-new-window-open-img {
 	.card-wrap {
 		margin-bottom: 55px;
 	}
-    .card-cont-wrap img {
-        width: 100%;
-    }
+
+	.card-cont-wrap img {
+		width: 100%;
+	}
+
 	.card-wrap .card-cont-wrap {
 		flex-direction: column;
 	}
@@ -1235,16 +1236,42 @@ span.external-new-window-open-img {
 		max-width: 300px;
 	}
 
+	.card-cont-wrap span.external-new-window-open-img img {
+		max-width: 23px;
+	}
+
 	.card-wrap {
-		padding:20px;
+		padding: 20px;
 	}
+
 	.card-cont-wrap ul {
-        padding-top:2px;
-    }
-	.card-wrap h3 {
-		font-size:25px;
+		padding-top: 2px;
 	}
+
+	.card-wrap h3 {
+		font-size: 25px;
+	}
+
 	.footer .logo-section img {
 		width: 165px;
+	}
+}
+
+@media (max-width:575px) {
+	.benefits-we-offer .hero-buttons {
+		display: inherit;
+	}
+
+	.benefits-we-offer .btn {
+		margin-bottom: 10px;
+	}
+
+	.benefits-we-offer .btn,
+	.benefits-we-offer .btn-outline {
+		width: 100%;
+	}
+
+	.a11y-section .a11y-btn {
+		text-align: center;
 	}
 }
