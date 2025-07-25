@@ -1272,7 +1272,7 @@ nav.header-center a:active {
 	}
 
 	.benefits-we-offer .btn,
-	.benefits-we-offer .btn-outline {
+	.benefits-we-offer .btn-outline,.a11y-section .a11y-btn {
 		width: 100%;
 	}
 
